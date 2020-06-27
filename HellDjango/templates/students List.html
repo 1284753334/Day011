@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>students List</title>
+    <style>
+        table{
+            border: 1px;
+            background-color: aqua;
+            mso-cellspacing: 1px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>学生列表</h1>
+
+
+<table>
+
+    <tr>
+        <th>序号</th>
+        <th>姓名<th>
+        <th>爱好</th>
+    </tr>
+    {% for student in students %}
+    <tr>
+
+        <td>{{student.id}}</td>
+        <td>{{ student.s_nama}}</td>
+        <td>{{ hobby }}</td>
+
+
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+</body>
+</html>
